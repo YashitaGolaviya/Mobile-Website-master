@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mi 1+ samsung apple nokia oppo vivo boat -->
+<products>
+          <product>
+                    <id>1</id>
+                    <category>mobile</category>
+                    <brand>Mi</brand>
+                    <name>xiomi 11 Lite 5G</name>
+                    <mrp>9,999</mrp>
+                    <offerprice>8,763</offerprice>
+                    <image>mi.png</image>
+                    <description>Mi 5G. An advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.</description>
+                    <qty>23</qty>
+          </product>
+          <product>
+                    <id>2</id>
+                    <category>mobile</category>
+                    <brand>Mi</brand>
+                    <name>Xiaomi 11i Hypercharge 5G</name>
+                    <mrp>36,000</mrp>
+                    <offerprice>26,799</offerprice>
+                    <image>mi2.png</image>
+                    <description> Xiaomi 11i Hypercharge 5Gcomes with a 6.7-inch ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode</description>
+                    <qty>10</qty>
+          </product>
+          <product>
+                    <id>3</id>
+                    <category>mobile</category>
+                    <brand>Mi</brand>
+                    <name>Xiaomi 12 Pro 5G</name>
+                    <mrp>70,789</mrp>
+                    <offerprice>59,799</offerprice>
+                    <image>mi3.png</image>
+                    <description> Xiaomi 12 Pro 5G ProMotion technology touchscreen, features Crash Detection and a new Truedepth 48-megapixel front camera with Photonic Engine, an extra hour of video playback compared to last year's model and a new Action mode</description>
+                    <qty>31</qty>
+          </product>
+          <product>
+                    <id>4</id>
+                    <category>mobile</category>
+                    <brand>OnePlus</brand>
+                    <name>OnePlus 10T 5G (12GB RAM, 256GB, Jade Green)</name>
+                    <mrp>70,789</mrp>
+                    <offerprice>54,999</offerprice>
+                    <image>oneplusphone.png</image>
+                    <description>OnePlus 10T 5G (12GB RAM, 256GB, Jade Green) Featuring an all-screen design with an 8.3-inch Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.</description>
+                    <qty>29</qty>
+          </product>
+          <product>
+                    <id>5</id>
+                    <category>mobile</category>
+                    <brand>OnePlus</brand>
+                    <name>OnePlus Nord 2T 5G (8GB RAM, 128GB, Jade Fog)</name>
+                    <mrp>35,789</mrp>
+                    <offerprice>28,899</offerprice>
+                    <image>oneplusphone3.png</image>
+                    <description>OnePlus Nord 2T 5G (8GB RAM, 128GB, Jade Fog) an all-screen design with an 8.3-inch Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.</description>
+                    <qty>10</qty>
+          </product>
+          <product>
+                    <id>6</id>
+                    <category>mobile</category>
+                    <brand>OnePlus</brand>
+                    <name>OnePlus 10T 5G (12GB RAM, 256GB, Jade Green)</name>
+                    <mrp>55,789</mrp>
+                    <offerprice>38,899</offerprice>
+                    <image>oneplusphone2.png</image>
+                    <description>OnePlus 10T 5G (12GB RAM, 256GB, Jade Green) Featuring an all-screen design with an 8.3-inch Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.</description>
+                    <qty>29</qty>
+          </product>
+          <product>
+                    <id>7</id>
+                    <category>mobile</category>
+                    <brand>Samsung</brand>
+                    <name>SAMSUNG Galaxy A23 (8GB RAM, 128GB, Orange)</name>
+                    <mrp>25,789</mrp>
+                    <offerprice>19,899</offerprice>
+                    <image>samsung.png</image>
+                    <description>SAMSUNG Galaxy A23 (8GB RAM, 128GB, Orange) an all-screen design with an 8.3-inch Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.</description>
+                    <qty>9</qty>
+          </product>
+          <product>
+                    <id>8</id>
+                    <category>mobile</category>
+                    <brand>Samsung</brand>
+                    <name>SAMSUNG Galaxy A23 (8GB RAM, 128GB, pro Max)</name>
+                    <mrp>45,789</mrp>
+                    <offerprice>39,899</offerprice>
+                    <image>samsung3.png</image>
+                    <description>SAMSUNG Galaxy A23 (8GB RAM, 128GB,pro Max) an all-screen design with an 8.3-inch Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.</description>
+                    <qty>22</qty>
+          </product>
+          <product>
+                    <id>8</id>
+                    <category>mobile</category>
+                    <brand>Samsung</brand>
+                    <name>SAMSUNG Galaxy Max (Foldable)</name>
+                    <mrp>75,799</mrp>
+                    <offerprice>69,999</offerprice>
+                    <image>samsung4.png</image>
+                    <description>SAMSUNG Galaxy Max (Foldable) Liquid Retina display. The powerful A15 Bionic chip with Neural Engine.Good fasilities and provide good quality. </description>
+                    <qty>8</qty>
+          </product>
+          <product>
+                    <id>9</id>
+                    <category>mobile</category>
+                    <brand>Apple</brand>
+                    <name>Apple iPhone 14 Pro Max (1TB, Deep Purple)</name>
+                    <mrp>1,02,799</mrp>
+                    <offerprice>89,999</offerprice>
+                    <image>apple.png</image>
+                    <description>Apple iPhone 14 Pro Max (1TB, Deep Purple) the powerful A15 Bionic chip with Neural Engine.Good fasilities and provide good quality. </description>
+                    <qty>12</qty>
+          </product>
+          <product>
+                    <id>10</id>
+                    <category>mobile</category>
+                    <brand>Apple</brand>
+                    <name>APPLE iPone 14 Pro Max</name>
+                    <mrp>85,799</mrp>
+                    <offerprice>79,999</offerprice>
+                    <image>apple2.png</image>
+                    <description>APPLE iPone 14 Pro Max the powerful A15 Bionic chip with Neural Engine.Good fasilities and provide good quality. </description>
+                    <qty>10</qty>
+          </product>
+          <product>
+                    <id>11</id>
+                    <category>mobile</category>
+                    <brand>Apple</brand>
+                    <name>Apple iPhone 13 (128GB, Alpine Green)</name>
+                    <mrp>74,990</mrp>
+                    <offerprice>63,990</offerprice>
+                    <image>apple3.png</image>
+                    <description>Apple iPhone 13 (128GB, Alpine Green) the powerful A15 Bionic chip with Neural Engine.Good fasilities and provide good quality. </description>
+                    <qty>14</qty>
+          </product>
+           <product>
+                    <id>12</id>
+                    <category>mobile</category>
+                    <brand>Nokia</brand>
+                    <name>Nokia 5710 XA (128MB, Dual SIM, Rear Camera, Black)</name>
+                    <mrp>5,990</mrp>
+                    <offerprice>3,999</offerprice>
+                    <image>nokia.png</image>
+                    <description>Extended protection for your device beyond the manufacturer warranty with coverage against all manufacturing defects.</description>
+                     <qty>15</qty>
+          </product>
+          <product>
+                    <id>13</id>
+                    <category>mobile</category>
+                    <brand>Nokia</brand>
+                    <name>Nokia C21 Plus (64GB ROM, 4GB RAM, TA-1431, Dark Cyan)</name>
+                    <mrp>7,900</mrp>
+                    <offerprice>6,990</offerprice>
+                    <image>nokia2.png</image>
+                    <description>Nokia C21 Plus (64GB ROM, 4GB RAM, TA-1431, Dark Cyan) Protection for your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>13</qty>
+          </product>
+          <product>
+                    <id>14</id>
+                    <category>mobile</category>
+                    <brand>Oppo</brand>
+                    <name>OPPO Reno 8 5G (8GB RAM, 128GB, Shimmer Gold)</name>
+                    <mrp>34,800</mrp>
+                    <offerprice>24,999</offerprice>
+                    <image>oppo2.png</image>
+                    <description>OPPO Reno 8 5G (8GB RAM, 128GB, Shimmer Gold) your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>10</qty>
+          </product>
+          <product>
+                    <id>15</id>
+                    <category>mobile</category>
+                    <brand>Oppo</brand>
+                    <name>OPPO A57 (4GB RAM, 64GB, Glowing Green)</name>
+                    <mrp>15,000</mrp>
+                    <offerprice>13,990</offerprice>
+                    <image>oppo.png</image>
+                    <description>OPPO A57 (4GB RAM, 64GB, Glowing Green) use for your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>9</qty>
+          </product>
+          <product>
+                    <id>16</id>
+                    <category>mobile</category> 
+                    <brand>Vivo</brand>
+                    <name>Vivo 5G pro (8GB RAM, 128GB)</name>
+                    <mrp>29,000</mrp>
+                    <offerprice>21,499</offerprice>
+                    <image>vivo4.png</image>
+                    <description>Vivo 5G pro (8GB RAM, 128GB) use for your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>27</qty>
+          </product>
+          <product>
+                    <id>17</id>
+                    <category>mobile</category>
+                    <brand>Vivo</brand>
+                    <name>Vivo Y22 (6GB RAM, 128GB, Metaverse Green)</name>
+                    <mrp>19,000</mrp>
+                    <offerprice>16,499</offerprice>
+                    <image>vivo.png</image>
+                    <description>Vivo Y22 (6GB RAM, 128GB, Metaverse Green) use for your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>9</qty>
+          </product>
+           <product>
+                    <id>18</id>
+                    <category>mobile</category>
+                    <brand>Vivo</brand>
+                    <name>Vivo Y20</name>
+                    <mrp>29,000</mrp>
+                    <offerprice>23,499</offerprice>
+                    <image>vivo2.jpg</image>
+                    <description>Vivo Y20 use for your device against accidental and liquid damage.
+                              .Good fasilities and provide good quality. </description>
+                    <qty>19</qty>
+          </product>
+           <product>
+                    <id>19</id>
+                    <category>iPad and Tablet</category>
+                    <brand>Apple</brand>
+                    <name>Apple iPad 10th Generation Wi-Fi (10.9 Inch, 64GB, Yellow, 2022 model)</name>
+                    <mrp>59,000</mrp>
+                    <offerprice>42,490</offerprice>
+                    <image>ipad.png</image>
+                    <description>Apple iPad 10th Generation Wi-Fi (10.9 Inch, 64GB, Yellow, 2022 model) Protection plans from Apple. </description>
+                    <qty>39</qty>
+          </product>
+           <product>
+                    <id>20</id>
+                    <category>iPad and Tablet</category>
+                    <brand>Samsung</brand>
+                    <name>SAMSUNG Galaxy Tab S8 Ultra Wi-Fi Android Tablet (14.56 Inch, 12GB RAM, 256GB ROM, Graphite)</name>
+                    <mrp>211,999.00</mrp>
+                    <offerprice>111,999.00</offerprice>
+                    <image>ipad2.png</image>
+                    <description>SAMSUNG Galaxy Tab S8 Ultra Wi-Fi Android Tablet (14.56 Inch, 12GB RAM, 256GB ROM, Graphite) Protection plans from SAMSUNG. </description>
+                    <qty>39</qty>
+          </product>
+           <product>
+                    <id>21</id>
+                    <category>iPad and Tablet</category>
+                    <brand>Nokia</brand>
+                    <name>NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Blue)</name>
+                    <mrp>21,999.00</mrp>
+                    <offerprice>15,649.00</offerprice>
+                    <image>nokiaitablet.png</image>
+                    <description>NOKIA T20 Wi-Fi Android Tablet (10.4 Inch, 4GB RAM, 64GB ROM, Blue) Protection plans from NOKIA. </description>
+                    <qty>9</qty>
+          </product>
+          <product>
+                    <id>22</id>
+                    <category>Laptop</category>
+                    <brand>Mi</brand>
+                    <name>Xiaomi NoteBook Pro XMA2006-FK Intel Core i5 11th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe Graphics, QHD+ IPS Display, Lustrous Grey, JYU4453IN)</name>
+                    <mrp>61,999.00</mrp>
+                    <offerprice>57,649.00</offerprice>
+                    <image>mi_laptop.png</image>
+                    <description>Xiaomi NoteBook Pro XMA2006-FK Intel Core i5 11th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe Graphics, QHD+ IPS Display, Lustrous Grey, JYU4453IN) Protection plans from Apple. </description>
+                    <qty>9</qty>
+          </product>
+          <product>
+                    <id>23</id>
+                    <category>Laptop</category>
+                    <brand>Apple</brand>
+                    <name>Apple MacBook Pro (M2 Max, 14.2 inch, 32GB, 1TB, macOS, Silver)</name>
+                    <mrp>509,900.00</mrp>
+                    <offerprice>309,900.00</offerprice>
+                    <image>laptop.png</image>
+                    <description>Xiaomi NoteBook Pro XMA2006-FK Intel Core i5 11th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe Graphics, QHD+ IPS Display, Lustrous Grey, JYU4453IN) Protection plans from Apple macBook Laptop. </description>
+                    <qty>9</qty>
+          </product>
+          <product>
+                    <id>24</id>
+                    <category>Accessories</category>
+                    <brand>Boat</brand>
+                    <name>Ambrane Dots Play TWS Earbuds with Passive Noise Cancellation (IPX4 Water Resistant, 13 Hours Playback, Black) Boat Blutooth. Good voice alexa.</name>
+                    <mrp>900.00</mrp>
+                    <offerprice>699.00</offerprice>
+                    <image>boatacc.png</image>
+                    <description>Xiaomi NoteBook Pro XMA2006-FK Intel Core i5 11th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe Graphics, QHD+ IPS Display, Lustrous Grey, JYU4453IN) Protection plans from Apple macBook Laptop. </description>
+                    <qty>9</qty>
+          </product>
+           <product>
+                    <id>25</id>
+                    <category>Accessories</category>
+                    <brand>Boat</brand>
+                    <name>Ambrane Dots Play TWS Earbuds with Passive Noise Cancellation (IPX4 Water Resistant, 13 Hours Playback, Black) Boat Blutooth. Good voice alexa.</name>
+                    <mrp>1220.00</mrp>
+                    <offerprice>999.00</offerprice>
+                    <image>acc7.png</image>
+                    <description>Xiaomi NoteBook Pro XMA2006-FK Intel Core i5 11th Gen (14 inch, 16GB, 512GB, Windows 11, MS Office 2021, Intel Iris Xe Graphics, QHD+ IPS Display, Lustrous Grey, JYU4453IN) Protection plans from Apple macBook Laptop. </description>
+                    <qty>3</qty>
+          </product>
+           <product>
+                    <id>26</id>
+                    <category>Accessories</category>
+                    <brand>Boat</brand>
+                    <name>boAt Flash RTL Edition Smartwatch with Activity Tracker (33mm LCD Display, IP68 Water Resistant, Moon Red Strap)</name>
+                    <mrp>62,200.00</mrp>
+                    <offerprice>3,099.00</offerprice>
+                    <image>accwatch2.png</image>
+                    <description>boAt Flash RTL Edition Smartwatch with Activity Tracker (33mm LCD Display, IP68 Water Resistant, Moon Red Strap) Band Watch special FireBoat . </description>
+                    <qty>2</qty>
+          </product>
+</products>

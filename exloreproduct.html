@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobTech</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="image/yglogo.jpg">
+</head>
+
+<body style="background-color: rgb(243, 238, 238);">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-end"
+    style="background-color: rgb(204, 239, 206); font-family: 'Ubuntu', sans-serif;font-size: large;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid text-center">
+        <a class="navbar-brand mx-auto pr-4" href="index.html"><img src="image/yglogotst.jpg"
+                class="rounded rounded-circle mx-auto" alt="" width="80px"></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item  mx-auto">
+                    <a class="nav-link active mx-3" aria-current="page" href="index.html"
+                        style="color: rgb(101, 19, 101);">Home</a>
+                </li>
+                <li class="nav-item mx-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="catalog.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" style="color: rgb(101, 19, 101);">Catalog</a>
+                    <div class="dropdown-menu rounded w-25 mx-auto" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="exloreproduct.html?dataType=mobile">Mobile</a>
+                        <a class="dropdown-item" href="exloreproduct.html?dataType=iPad and Tablet">iPad & Tablet</a>
+                        <a class="dropdown-item" href="exloreproduct.html?dataType=Laptop">Laptop</a>
+                    </div>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="exloreproduct.html?dataType=Accessories" style="color: rgb(101, 19, 101);">Accessories</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="exloreproduct.html" style="color: rgb(101, 19, 101);">Explore Products</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="aboutUs.html" style="color: rgb(101, 19, 101);">About Us</a>
+                </li>
+            </ul>
+            <div class="ml-auto">
+                <a href="signin.html"><i class="fa fa-user-circle text-dark mx-2" style="font-size:36px"></a></i>
+                <i class="fa fa-shopping-cart mx-2" style="font-size:36px"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h1 class="text-dark text-center mt-2 mb-2 " style="background-color: rgb(248, 226, 204);text-shadow: 2px 1px rgb(215, 211, 211);" id="productHead"></h1>
+</div>
+    <section">
+        <div class="container py-5">
+          <div class="row" id="productDiv">
+
+          </div>
+        </div>
+      </section>
+
+</body>
+<script>
+    productHead=document.getElementById('productHead');
+     if(window.XMLHttpRequest){
+        xmlhttp=new XMLHttpRequest();
+      }
+  else{
+    xmlhttp=new ActiveXObject();
+  }
+  xmlhttp.open('GET','data/productData.xml',false)
+  xmlhttp.send();
+  xmldoc = xmlhttp.responseXML 
+  productDiv = document.getElementById('productDiv')  
+  urlStr = window.location.search;
+  urlParam = new URLSearchParams(urlStr);
+  productCategory = urlParam.get('dataType');
+  x= productCategory==null?'All Products':productCategory;
+  productHead.innerHTML=x;
+  for(i=0;i<xmldoc.getElementsByTagName('product').length;i++){
+    if(xmldoc.getElementsByTagName('category')[i].childNodes[0].nodeValue==productCategory || xmldoc.getElementsByTagName('brand')[i].childNodes[0].nodeValue==productCategory || xmldoc.getElementsByTagName('name')[i].childNodes[0].nodeValue==productCategory|| x=='All Products')
+    {console.log('es');
+    productDiv.innerHTML+=
+    `
+    <div class="col-md-8 col-lg-6 col-xl-4 mb-3 mx-auto pt-3">
+        <div class="card shadow pt-2" style="border-radius: 15px;background-color: rgb(226, 222, 219);">
+            <div class="mx-auto m-2">
+                <img src="image/${xmldoc.getElementsByTagName('image')[i].childNodes[0].nodeValue}" width='300px' height='300px' style='object-fit:contain' alt="Laptop" />
+            </div>
+            <div class="card-body pb-0">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <span class="d-inline-block text-truncate" style="max-width: 200px;">
+                            <a href="#!" class="text-dark">${xmldoc.getElementsByTagName('name')[i].childNodes[0].nodeValue}</a>
+                        </span> 
+                        <p class="small text-muted">${xmldoc.getElementsByTagName('category')[i].childNodes[0].nodeValue}</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-row justify-content-end mt-1 mb-4 text-danger">
+                            <i class="fa fa-star" style="color: rgb(249, 212, 7);"></i>
+                            <i class="fa fa-star" style="color: rgb(249, 212, 7);"></i>
+                            <i class="fa fa-star"style="color: rgb(249, 212, 7);"></i>
+                            <i class="fa fa-star" style="color: rgb(249, 212, 7);"></i>
+                        </div>
+                        <p class="small text-muted">Rated 4.0/5</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body pb-0">
+                <div class="d-flex justify-content-between">
+                    <p><a href="#!" class="text-dark" style="text-decoration:none;"><s>Rs.${xmldoc.getElementsByTagName('mrp')[i].childNodes[0].nodeValue}</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          Rs.${xmldoc.getElementsByTagName('offerprice')[i].childNodes[0].nodeValue}</a></p>
+                    <!-- <p class="text-dark">#### 8787</p> -->
+                </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
+                    <button class='btn btn-outline-primary d-block mx-auto'><a class='text-decoration-none text-dark'>Buy now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    `}
+  }
+</script>
+<footer class="text-center text-lg-start text-white p-2" style="background-color: #3e475e">
+    <section class="">
+        <div class="container text-center text-md-start">
+            <div class="row mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Catalog's</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="products.html?dataType=mobile" class="text-white text-decoration-none">Mobile
+                            Phones</a>
+                    </p>
+                    <p>
+                        <a href="products.html?dataType=tablet" class="text-white text-decoration-none">Tablet &
+                            iPad</a>
+                    </p>
+                    <p>
+                        <a href="products.html?dataType=accessory"
+                            class="text-white text-decoration-none">Laptop</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none">Home</a>
+                    </p>
+                    <p>
+                        <a href="index.html" class="text-white text-decoration-none">Catalog</a>
+                    </p>
+                    <p>
+                        <a href="index.html" class="text-white text-decoration-none">Accessories</a>
+                    </p>
+                    <p>
+                        <a href="accessories.html" class="text-white text-decoration-none">Explore Products</a>
+                    </p>
+                    <p>
+                        <a href="aboutus.html" class="text-white text-decoration-none">About Us</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #3f16af; height: 2px" />
+                    <p><i class="fa fa-home mr-3"></i>Surat-395010 ,Gujarat, India.</p>
+                    <p><i class="fa fa-envelope mr-3"></i>yashitagolaviya21@gmail.com </p>
+                    <p><i class="fa fa-phone mr-3"></i> +91 98981 91820 </p>
+                    <p><i class="fa fa-print mr-3"></i> +91 92921 46677</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(12, 12, 12, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white text-decoration-none" href="/index.html">YG Mobile Site</a>
+    </div>
+</footer>
+</html>

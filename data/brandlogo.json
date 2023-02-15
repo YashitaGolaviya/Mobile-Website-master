@@ -1,0 +1,12 @@
+{
+          "logo":[
+                    {"brandName":"Mi","image":"milogo.png"},
+                    {"brandName":"OnePlus","image":"onepluslogo.png"},
+                    {"brandName":"Samsung","image":"Samsung_Logo_PNG.png"},
+                    {"brandName":"Apple","image":"applelogo.png"},
+                    {"brandName":"Nokia","image":"nokialogo.png"},
+                    {"brandName":"Oppo","image":"oppologo.png"},
+                    {"brandName":"Vivo","image":"vivo logo2.png"},
+                    {"brandName":"Boat","image":"boat_logo.png"}
+          ]
+}
