@@ -31,9 +31,9 @@ function func(){
         validPhone.style.display = 'none';
     }
     if(!(validName.style.display == 'block' || validEmail.style.display == 'block' || validPhone.style.display == 'block' || validMessage.style.display == 'block'  )){
-         //    a =  window.location.href
-    //    b = a.replace('#contact','message.html').replace('index.html' , 'message.html').replace('#about' , 'message.html').replace('#','message.html').replace('#products','message.html')
-    //    window.location.replace(b)
+        a =  window.location.href
+       b = a.replace('#contact','message.html').replace('index.html' , 'message.html').replace('#about' , 'message.html').replace('#','message.html').replace('#products','message.html')
+        window.location.replace(b)
 
     }
 }

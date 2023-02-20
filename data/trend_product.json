@@ -1,0 +1,9 @@
+{
+          "trend_product":[
+                    {"image":"trend4.png","sell-price":"41,500","offer-price":"38,999","name":"ONEPLUS 10R 5G"},
+                    {"image":"trend2.png","sell-price":"2,00,000","offer-price":"1,73,039","name":"Apple iPhone 14 Pro 1TB Gold"},
+                    {"image":"trend.png","sell-price":"1,49,340","offer-price":"1,09,999","name":"Samsung Galaxy S22 Ultra 5G"},
+                    {"image":"trend3.png","sell-price":"34,990","offer-price":" 29,299","name":"VIVO Y16 5G"}
+          ]
+
+}
