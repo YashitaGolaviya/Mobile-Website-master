@@ -1,5 +1,5 @@
 #stic {
-    background-image: url(image/homeimage...\ -\ Copy.avif);
+    background-image: url(image/homeimage...\ -\ Copy.avif );
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
@@ -8,19 +8,6 @@
     opacity: 7;
     background-size: cover;
         }
-/* .submitpage{
-	background: url("image/thank-you-cover.webp") top center no-repeat;
-	background-size: cover;
-	width: 100%;
-	position: relative;
-
-}
-.submitpage:before {
-	content: "";
-	background: rgba(8, 89, 108, 0.8);
-	position: absolute;
-	inset: 0;
-        } */
 .nav-bar::before {
 	position: absolute;
 	content: "";
