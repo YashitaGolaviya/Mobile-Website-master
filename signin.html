@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/x-icon" href="image/yglogo.jpg">
+    <!-- <script src="work.js"></script> -->
 </head>
         <style>
           h1 {
@@ -172,16 +173,32 @@
         <i class="fa fa-at"  style="font-weight: bold;"></i>
         <i class="fa fa-comment-o"  style="font-weight: bold;"></i>
       </div>
-      <form action="/">
+      <form  onsubmit="return submitForm()" action="submitpage.html" method="get">
         <h1 class="text-center" id="loginheader">Login</h3>
             <h1 class="text-center" id="signupheader">Sign Up</h3>
         <div class="info">
-          <input class="fname" type="text" name="name" placeholder="Your name" id="name">
-          <input type="text" name="name" placeholder="Email" id="email">
-          <input type="text" name="name" placeholder="Phone number" id="phoneno">
-          <input type="password" name="password" placeholder="Password" id="psw">
+            <div class="form-floating">
+                <input class="fname" type="text" name="name" placeholder="Your name" id="name">
+                <p id="validName" class="alert alert-danger d-none">Please enter name properly</p>
+            </div>
+            <div class="form-floating">
+                <input type="text" name="email" placeholder="Email" id="email">
+                <p id="validEmail" class="alert alert-danger d-none">Please enter valid Email</p>
+            </div>
+            <div class="form-floating">
+                <input type="text" name="name" placeholder="Phone number" id="phoneNo">
+                <p id="validPhone" class="alert alert-danger d-none">Please enter valid phone number</p>
+            </div>
+            <div class="form-floating">
+                <input type="password" name="password" placeholder="Password" id="psw">
+                <p id="validPassword" class="alert alert-danger d-none">Password must contain 6 letters,1 special character and 1 number</p>
+            </div>
         </div>
-        <button class="btn btn-primary" type="submit" onclick="func()">Submit</button>
+        <div class="text-center m-2">
+            <input type="submit" class="btn btn-primary" id="signupBtn" value="Signup">
+            <input type="submit" class="btn btn-primary" id="loginBtn" value="Log In">
+          </div>
+        <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
         <p class="text-center pt-2" id="signupmsg">Don't have account? <a href="signin.html?activity=signup" class="text-decoration-none">Sign Up</a></p>
         <p class="text-center pt-2" id="loginmsg">Already have account? <a href="signin.html" class="text-decoration-none">Log In</a></p>
         <h3 id="loginmsg" class="text-center d-none" >Logged In Successfully....</h3>
@@ -268,6 +285,8 @@ $(document).ready(() => {
     $('#signupmsg').hide()
     $('#loginheader').hide()
     $('#loginmsg').show()
+    $('#loginBtn').hide()
+    $('#signupBtn').show()
   }
   else {
     $('#phoneno').hide()
@@ -275,7 +294,60 @@ $(document).ready(() => {
     $('#signupheader').hide()
     $('#signupmsg').show()
     $('#loginmsg').hide()
+    $('#loginBtn').show()
+    $('#signupBtn').hide()
   }
-</script>
+  function submitForm(event){
+        let name=$('#name').val();
+        let phoneNumber=$('#phoneNo').val();
+        let email=$('#email').val();
+        let password=$('#psw').val();
+        let validRegexName = /^[a-zA-Z]/;
+        let validRegexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let validRegexPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        let validRegexPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+        let flag = true;
+        //This PhoneNumberRegex allows:
+        //(123) 456-7890
+        // (123)456-7890
+        // 123-456-7890
+        // 123.456.7890
+        // 1234567890
+        // +31636363634
+        // 075-63546725
 
+        if(email.match(validRegexEmail)){
+            $('#validEmail').addClass('d-none');
+          }
+        else{
+          $('#validEmail').removeClass('d-none');
+          flag=false;
+        }
+        if(password.match(validRegexPassword)){
+            $('#validPassword').addClass('d-none');
+          }
+        else{
+          $('#validPassword').removeClass('d-none');
+          flag=false;
+        }
+        // debugger
+        if(activity=='signup'){
+          if(name.match(validRegexName)){
+            $('#validName').addClass('d-none');
+          }
+          else{
+            $('#validName').removeClass('d-none');
+            flag=false;
+          }
+          if(phoneNumber.match(validRegexPhone)){
+            $('#validPhone').addClass('d-none');
+          }
+          else{
+            $('#validPhone').removeClass('d-none');
+            flag=false; 
+          }
+        }
+        return flag;
+      }
+</script>
 </html>
